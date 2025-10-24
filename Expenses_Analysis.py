@@ -8,9 +8,10 @@ FILE_NAME = "expenses.csv"
 # Create CSV with header if it doesn't exist
 if not os.path.exists(FILE_NAME):
     df = pd.DataFrame(columns=["Date", "Category", "Amount"])
+    print(df.head())
+    print()
     df.to_csv(FILE_NAME, index=False)
 
-# Add expense
 def add_expense():
     date = input("Enter date (yyyy-mm-dd): ")
     category = input("Enter category: ")
@@ -26,11 +27,11 @@ def add_expense():
     new_row.to_csv(FILE_NAME, mode='a', header=False, index=False)
     print("Expense added successfully!\n")
 
-# View expenses
+
 def view_expenses():
     df = pd.read_csv(FILE_NAME)
     if df.empty:
-        print("No expenses found.\n")
+        print("No expenses to summarize.\n")
         return
     print("\nAll Expenses:\n")
     print(df)
@@ -66,6 +67,7 @@ def main():
             view_expenses()
         elif choice == "3":
             summary_by_category()
+
         elif choice == "4":
             print("Goodbye!")
             break
@@ -74,6 +76,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
