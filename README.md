@@ -28,5 +28,6 @@ A Python-based project to track, view, and analyze personal expenses. The projec
 ```bash
 pip install pandas matplotlib
 
-**Terminal View (Add & View Expenses):**
+3. **[Expenses_Analysis.py](./Expenses_Analysis.py)**
+
 
