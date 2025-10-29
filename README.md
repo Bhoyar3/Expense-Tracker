@@ -28,7 +28,9 @@ A Python-based project to track, view, and analyze personal expenses. The projec
 ```bash
 pip install pandas matplotlib
 
-3. Run the program by opening Expenses_Analysis.py in your IDE or terminal.
+Run the program by opening [Expenses_Analysis.py](https://github.com/Bhoyar3/Expense-Tracker/blob/main/Expenses_Analysis.py)
+
+
 
 
 
